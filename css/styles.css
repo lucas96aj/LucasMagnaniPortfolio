@@ -9,6 +9,7 @@ body
 {
     display: inline-block;
     width: 12%;
+    min-width: max-content;
     padding: 8px 16px;
     font-size: large;
     text-align: center;
@@ -32,7 +33,7 @@ body
 .section 
 {
     display: none;
-    width: 50%;
+    width: 70%;
 }
 
 /* Muestra la seccion que corresponda segun el item seleccionado */
