@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Lucas Magnani">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Lucas Magnani's Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+            <input type="radio" id="summary" name="navbar" class="nav-radio" checked>
+            <label for="summary" class="navbar-item">Summary</label>
+
+            <input type="radio" id="experience" class="nav-radio" name="navbar">
+            <label for="experience" class="navbar-item">Experience</label>
+
+            <input type="radio" id="education" class="nav-radio" name="navbar">
+            <label for="education" class="navbar-item">Education</label>
+
+            <input type="radio" id="technologies" class="nav-radio" name="navbar">
+            <label for="technologies" class="navbar-item">Technologies</label>
+
+            <input type="radio" id="languages" class="nav-radio" name="navbar">
+            <label for="languages" class="navbar-item">Languages</label>
+
+            <input type="radio" id="contact" class="nav-radio" name="navbar">
+            <label for="contact" class="navbar-item">Contact</label>
+        
+        <div id="summary-container" class="section">
+            <h1>Lucas Magnani</h1>
+            <h2>.NET C# Developer</h2>
+
+            <p>
+                .NET C# developer with 8 months of experience in developing web
+                applications. I have worked with tools such as C#, .NET, SQL Server and Git.
+                I also have a solid understanding of Entity Framework and the MVC
+                architecture.
+                Currently in the second year of a Higher Technical Degree in Software
+                Development.
+                Fully committed to continuous learning and professional growth in the software
+                development field.
+            </p>
+        </div>
+        
+        <div id="experience-container" class="section">
+            <div class="experience-class">
+                <h3>.NET C# Developer</h3>
+                <h4>Tecnologistica Consultores S.A.</h4>
+                <p>2021-2022</p>
+
+                <ul>
+                    <li>Developed and maintained web applications using C#, .NET, SQL
+                        Server, and DevExpress.</li>
+                    <li>Optimized database queries and application performance through use
+                        of SQL Server.</li>
+                    <li>Assisted in troubleshooting and debugging to resolve issues</li>
+                </ul> 
+            </div>   
+        </div>
+
+        <div id="education-container" class="section">
+            <div class="education-class">
+                <h3>Higher Technical Degree in Software Development</h3>
+                <h4>Instituto de Formación Técnica Superior N° 16 (I.F.T.S. N° 16)</h4>
+                <p>2023-Present</p>
+
+                <p>Currently in the second year. Expected graduation: 2025</p>
+            </div>
+            
+            <div class="education-class">
+                <h3>Higher Technical Degree in Software Development</h3>
+                <h4>Instituto de Formación Técnica Superior N° 16 (I.F.T.S. N° 16)</h4>
+                <p>2023-Present</p> 
+            </div>
+        </div>
+
+        <div id="technologies-container" class="section">
+            <img src="images/csharp-icon.png" alt="C# icon" style="height: 128px;">
+            <img src="images/dotnet-icon.png" alt=".NET icon" style="height: 128px;">
+            <img src="images/html5-icon.png" alt="HTML5 icon" style="height: 128px;">
+            <img src="images/css3-icon.png" alt="CSS3 icon" style="height: 128px;">
+            <img src="images/sql-icon.png" alt="SQL icon" style="height: 128px;">
+            <img src="images/git-icon.png" alt="Git icon" style="height: 128px;">
+        </div>
+
+        <div id="languages-container" class="section">
+            <ul>
+                <li>Spanish: Native</li>
+                <li>
+                    English: C1 (Advanced)
+                    <ul>
+                        <li>
+                            <a href="https://cert.efset.org/9rXf3C" target="_blank">EF SET English Certificate</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contact-container" class="section">
+            <form>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message"></textarea>
+                <br>
+                <input type="submit" id="submit" name="submit">
+            </form>
+        </div>
+        
+    </body>
+</html>

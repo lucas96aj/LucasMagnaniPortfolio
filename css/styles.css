@@ -1,0 +1,49 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Da formato a los labels del navbar */
+.navbar-item {
+    display: block;
+    width: 12%;
+    padding: 8px 16px;
+    font-size: large;
+}
+
+/* Cambia el estilo del item del navbar que se encuentre abajo del mouse */
+.navbar-item:hover {
+    background-color: firebrick;
+    color: white;
+}
+
+/* Oculta los radio buttons */
+.nav-radio {
+    display: none;
+}
+
+/* Le da formato al item del menu que se encuentre seleccionado */
+.nav-radio:checked + label {
+    background-color: firebrick;
+    color: white;
+} 
+
+/* Oculta todas las secciones por defecto */
+.section {
+    display: none;
+}
+
+/* Muestra la seccion que corresponda segun el item seleccionado */
+#summary:checked ~ #summary-container,
+#experience:checked ~ #experience-container,
+#education:checked ~ #education-container,
+#technologies:checked ~ #technologies-container,
+#languages:checked ~ #languages-container,
+#contact:checked ~ #contact-container {
+    display: inline;
+}
+
+
+
+
+
