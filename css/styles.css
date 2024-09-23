@@ -1,36 +1,38 @@
-body {
+body 
+{
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif
 }
 
 /* Da formato a los labels del navbar */
-.navbar-item {
-    display: block;
+.navbar-item 
+{
+    display: inline-block;
     width: 12%;
     padding: 8px 16px;
     font-size: large;
+    text-align: center;
 }
 
-/* Cambia el estilo del item del navbar que se encuentre abajo del mouse */
-.navbar-item:hover {
+/* Cambia el estilo del item del navbar que se encuentre abajo del mouse y también del item seleccionado */
+.navbar-item:hover,
+.nav-radio:checked + label 
+{
     background-color: firebrick;
     color: white;
 }
 
 /* Oculta los radio buttons */
-.nav-radio {
+.nav-radio 
+{
     display: none;
 }
 
-/* Le da formato al item del menu que se encuentre seleccionado */
-.nav-radio:checked + label {
-    background-color: firebrick;
-    color: white;
-} 
-
-/* Oculta todas las secciones por defecto */
-.section {
+/* Oculta y da estilo a las secciones por defecto */
+.section 
+{
     display: none;
+    width: 50%;
 }
 
 /* Muestra la seccion que corresponda segun el item seleccionado */
@@ -39,10 +41,29 @@ body {
 #education:checked ~ #education-container,
 #technologies:checked ~ #technologies-container,
 #languages:checked ~ #languages-container,
-#contact:checked ~ #contact-container {
-    display: inline;
+#contact:checked ~ #contact-container 
+{
+    display: block;
 }
 
+#dark-mode 
+{
+    display: inline-block;
+    width: 5%
+}
+
+body:has(#dark-mode:checked) 
+{
+    background-color: black;
+    color: #00ff41;
+}
+
+#dark-mode:checked ~ .navbar-item:hover,
+#dark-mode:checked ~ .nav-radio:checked + label
+{
+    background-color: #00ff41;
+    color: black;
+}
 
 
 
