@@ -47,16 +47,35 @@ body
     display: block;
 }
 
+
+/* Desde acá se le da estilo al dark mode */
 #dark-mode 
 {
-    display: inline-block;
-    width: 5%
+    display: none;
 }
 
-body:has(#dark-mode:checked) 
+#dark-mode-label
+{
+    margin: 0 1%;
+    display: inline-block;
+}
+
+#dark-mode-sun
+{
+    display: none;
+}
+
+#dark-mode-moon
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body:has(#dark-mode:checked)
 {
     background-color: black;
     color: #00ff41;
+    font-family: "Lucida Console", "Monospace", monospace;
 }
 
 #dark-mode:checked ~ .navbar-item:hover,
@@ -66,6 +85,13 @@ body:has(#dark-mode:checked)
     color: black;
 }
 
+#dark-mode:checked ~ #dark-mode-label > #dark-mode-sun {
+    display: inline-block;
+    fill: white;
+    vertical-align: middle;
+}
 
-
-
+#dark-mode:checked ~ #dark-mode-label > #dark-mode-moon
+{
+    display: none;
+}
